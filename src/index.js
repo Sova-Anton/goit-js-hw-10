@@ -35,7 +35,7 @@ function renderMarkupCountries(countries) {
   if (countries.length >= 2 && countries.length < 10) {
     const marcupListCountries = countries
       .map(({ name, flags }) => {
-        return `<li> <img src = ${flags.svg} alt = "Country flag" width = 100><span>${name.official}</span></li>`;
+        return `<li> <img src = ${flags.svg} alt = "Country flag" width = 75><span>${name.official}</span></li>`;
       })
       .join('');
 
@@ -47,7 +47,7 @@ function renderMarkupCountries(countries) {
       .map(({ name, capital, population, flags, languages }) => {
         return `<h1 class="header"> <img src = ${
           flags.svg
-        } alt = "Country flag" width = 150>${name.official}</h1>
+        } alt = "Country flag" width = 300>${name.official}</h1>
       <p class ="text"><b>Capital</b>: ${capital}</p>
       <p class ="text"><b>Population</b>: ${population}</p>
       <p class ="text"><b>Languages</b>: ${Object.values(languages).join(
