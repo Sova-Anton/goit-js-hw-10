@@ -7,7 +7,7 @@ body {
     Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background-color: #fafafa;
+  background-color: #bbb5ab9f;
   color: #212121;
   line-height: 1.5;
 }
@@ -17,4 +17,25 @@ body {
   padding: 8px;
   max-width: 320px;
   margin-bottom: 16px;
+}
+li {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;  
+  list-style: none;
+}
+img {
+  margin-right: 15px;
+}
+span {
+  font-size: 25px;
+
+}
+.header {
+  display: flex;
+  align-items: center;
+  font-size: 50px;
+}
+.text {
+  font-size: 20px;
 }
