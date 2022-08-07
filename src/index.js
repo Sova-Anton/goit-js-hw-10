@@ -21,7 +21,9 @@ function onInputHandle() {
 
   fetchCountries(getCountries)
     .then(renderMarkupCountries)
-    .catch(error => console.log(error));
+    .catch(error =>
+      Notiflix.Notify.failure('Oops, there is no country with that name')
+    );
 }
 
 function renderMarkupCountries(countries) {
@@ -58,10 +60,6 @@ function renderMarkupCountries(countries) {
 
     countryList.innerHTML = '';
     countryInfo.innerHTML = marcupCountry;
-  }
-  if (countries.length === 0) {
-    resetMarkup();
-    Notiflix.Notify.failure('Oops, there is no country with that name');
   }
 }
 
